@@ -1,0 +1,159 @@
+<mxfile host="65bd71144e">
+    <diagram id="EeSfMxdL0KzVXlW2j4jU" name="Page-1">
+        <mxGraphModel dx="1053" dy="476" grid="1" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="client" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="30" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="FrontEnd(reactjs)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="50" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Routes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="50" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="request" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry x="-0.0718" y="10" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="110" y="50" as="sourcePoint"/>
+                        <mxPoint x="260" y="60" as="targetPoint"/>
+                        <Array as="points"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="&lt;ul&gt;&lt;li&gt;It will contain all the routes of a catagory&lt;/li&gt;&lt;li&gt;it will invoe the methods from the controller files&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
+                    <mxGeometry x="610" y="25" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="request to a url" style="endArrow=classic;html=1;verticalAlign=bottom;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="50" as="sourcePoint"/>
+                        <mxPoint x="480" y="50" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="gets desired response" style="endArrow=classic;html=1;verticalAlign=bottom;" edge="1" parent="1">
+                    <mxGeometry y="20" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="480" y="110" as="sourcePoint"/>
+                        <mxPoint x="400" y="110" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="controller" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="210" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;ul&gt;&lt;li&gt;its methods gets invoked by routes&amp;nbsp;&lt;/li&gt;&lt;li&gt;it extracts and process the data from the request body or the request parameter&lt;/li&gt;&lt;li&gt;its methods utilises services for database&amp;nbsp;&lt;/li&gt;&lt;li&gt;it provides the response to the routes&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="160" width="220" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="request&amp;nbsp; with body" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry x="-0.25" y="20" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="590" y="120" as="sourcePoint"/>
+                        <mxPoint x="590" y="200" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="response in json" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry y="20" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="520" y="200" as="sourcePoint"/>
+                        <mxPoint x="520" y="120" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="260" y="90" as="sourcePoint"/>
+                        <mxPoint x="110" y="100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="response&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="90" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="services" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="360" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;ul&gt;&lt;li&gt;Its Will contain classes for maintaining method structure&lt;/li&gt;&lt;li&gt;Its methods will be called by controllers&lt;/li&gt;&lt;li&gt;It generally contacts with the database (CRUD)&lt;/li&gt;&lt;li&gt;It can be performing ai tasks to&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="320" width="220" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="CRUD&amp;nbsp; task for database&amp;nbsp;" style="endArrow=classic;html=1;fontSize=13;" edge="1" parent="1">
+                    <mxGeometry x="0.1429" y="30" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="600" y="280" as="sourcePoint"/>
+                        <mxPoint x="600" y="350" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="response or data from DB" style="endArrow=classic;html=1;fontSize=13;" edge="1" parent="1">
+                    <mxGeometry x="-0.1429" y="30" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="500" y="350" as="sourcePoint"/>
+                        <mxPoint x="500" y="280" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="500" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="model1" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="500" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="model2" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="500" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="model3" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="500" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="model4" style="rhombus;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="610" y="500" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="utilises model's methods and schema" style="shape=flexArrow;endArrow=classic;html=1;fontSize=13;" edge="1" parent="1">
+                    <mxGeometry x="-0.803" y="16" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="540" y="490" as="sourcePoint"/>
+                        <mxPoint x="540" y="430" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="610" y="470"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="&lt;ul&gt;&lt;li&gt;models contains schema of all the models&amp;nbsp;&lt;/li&gt;&lt;li&gt;these are providing the necessary methods&amp;nbsp; execution like -&amp;gt;pre&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="700" y="460" width="140" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="database" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="360" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;fontSize=13;" edge="1" parent="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="350" y="390" as="sourcePoint"/>
+                        <mxPoint x="470" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="&lt;ul&gt;&lt;li&gt;these two files are maintaining the connection to the two databases&lt;/li&gt;&lt;li&gt;1st the main DB&amp;nbsp;&lt;/li&gt;&lt;li&gt;2nd is the static DB used to hold the static questions&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry y="310" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="mainDB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="530" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="staticDB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="530" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="&lt;ul&gt;&lt;li&gt;holds the static questions as they dont have connection to any other model&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="610" width="160" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="&lt;ul&gt;&lt;li&gt;it holds everything that have a connection or foreign key between them&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="620" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;fontSize=13;" edge="1" parent="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="280" y="520" as="sourcePoint"/>
+                        <mxPoint x="290" y="430" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;fontSize=13;" edge="1" parent="1">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="120" y="520" as="sourcePoint"/>
+                        <mxPoint x="260" y="430" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="this file contains the explanation of the whole project" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="255" y="780" width="320" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

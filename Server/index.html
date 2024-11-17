@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload PDF</title>
+  </head>
+  <body>
+    <h1>Upload PDF</h1>
+    <form id="uploadForm">
+      <input type="file" id="pdfFile" accept="application/pdf" required />
+      <button type="submit">Upload</button>
+    </form>
+
+    <script>
+      document
+        .getElementById("uploadForm")
+        .addEventListener("submit", async function (event) {
+          event.preventDefault();
+
+          const fileInput = document.getElementById("pdfFile");
+          const file = fileInput.files[0];
+
+          if (!file) {
+            alert("Please select a file.");
+            return;
+          }
+
+          const formData = new FormData();
+          formData.append("pdf", file);
+          // formData.append("resID", "uskgfil8932749");
+
+          try {
+            const response = await fetch(
+              //   "http://127.0.0.1:8000/student/resume/",
+              "http://popcornwar.pythonanywhere.com/student/resume/",
+              {
+                method: "POST",
+                body: formData,
+              }
+            );
+
+            const data = await response.json();
+            console.log("Success:", data);
+            alert("File uploaded successfully.");
+          } catch (error) {
+            console.error("Error uploading file:", error);
+            alert("Error uploading file.");
+          }
+        });
+    </script>
+  </body>
+</html>
