@@ -1,4 +1,4 @@
-exports.url = "https://mock-master-v1-backend.onrender.com"
+exports.url = "https://mock-master-v1-backend.onrender.com/"
 exports.secretKey = "Agrawal"
 exports.getCookie = (name) => {
     const value = `${document.cookie}`;
